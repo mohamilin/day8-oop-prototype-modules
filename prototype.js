@@ -32,59 +32,15 @@ nilai boolean ‘true’ jika number tersebut merupakan bilangan prima
 
 
 // 
-
-String.prototype.isPrime = function() {
-    let nums = this.Math.sqrt();
-    for (let i = 2; i <= nums; i++) {
-        if (num % i === 0) {
-            return false;
-        }
-    }
-    return ` Nilai anda : ${num > 1}`;
-}
-
-console.log("5".isPrime());
-
 Number.prototype.isPrime = function() {
-    for(let i = 2; i<= Math.sqrt(); i++) {
-        if(this % i === 0) {
-            return false
-        }
-    }
-    return this > 1;
-}
-
-console.log("7".isPrime());
-
-// 
-
-Number.prototype.isPrima = function() {
-
-    const num = () => {
-        let nums = this.Math.sqrt();
+    let nums = Math.sqrt(this);
     for (let i = 2; i <= nums; i++) {
-        if (num % i === 0) {
+        if (this % i === 0) {
             return false;
         }
     }
-    return ` Nilai anda : ${num > 1}`;
-    }
-
-    return this.num();
+    return ` Nilai anda : ${this >= 2}`;
 }
 
-console.log("5".isPrima());
-
-
-
-function isPrime(num) {
-    let nums = Math.sqrt(num);
-    for (let i = 2; i <= nums; i++) {
-        if (num % i === 0) {
-            return false;
-        }
-    }
-    return ` Nilai anda : ${num > 1}`;
-}
-
-console.log(isPrime(2));
+let angka = 10;
+angka.isPrime();
